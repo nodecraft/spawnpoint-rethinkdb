@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nodecraft/appframe-rethinkdb.js#readme",
   "dependencies": {
-    "appframe": "0.3.3",
+    "appframe": "0.3.5",
     "rethinkdbdash": "2.2.12",
     "lodash": "3.10.1"
   }
