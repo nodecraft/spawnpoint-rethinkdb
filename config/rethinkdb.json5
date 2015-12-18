@@ -1,0 +1,16 @@
+{
+	discovery: false,
+	pool: true,
+	buffer: 50,
+	max: 1000,
+	timeout: 5,
+	timeoutError: 1000,
+	silent: true,
+	db: "test",
+	servers: [
+		{
+			host: "localhost",
+			port: 29015,
+		}
+	]
+}

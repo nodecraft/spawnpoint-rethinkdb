@@ -1,0 +1,7 @@
+{
+	"rethinkdb.driver_error": "A database driver error occured.",
+	"rethinkdb.server_error": "A database server error occured.",
+	"rethinkdb.runtime_error": "A database runtime error occured.",
+	"rethinkdb.compile_error": "A database compile error occured.",
+	"rethinkdb.client_error": "A database client error occured."
+}

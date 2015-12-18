@@ -1,0 +1,28 @@
+{
+  "name": "appframe-rethinkdb",
+  "version": "0.1.0",
+  "description": "RethinkDB plugin for appframe.js NPM module",
+  "main": "appframe-express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodecraft/appframe-rethinkdb.js.git"
+  },
+  "keywords": [
+    "rethinkdb",
+    "appframe"
+  ],
+  "author": "NodeCraft Hosting LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodecraft/appframe-rethinkdb.js/issues"
+  },
+  "homepage": "https://github.com/nodecraft/appframe-rethinkdb.js#readme",
+  "dependencies": {
+    "appframe": "0.3.0",
+    "rethinkdbdash": "2.2.12",
+    "lodash": "3.10.1"
+  }
+}
