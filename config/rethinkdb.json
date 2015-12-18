@@ -3,7 +3,7 @@
 	"servers": [
 		{
 			"host": "localhost",
-			"port": 29015,
+			"port": 29015
 		}
 	]
 }
