@@ -1,8 +1,8 @@
 {
   "name": "appframe-rethinkdb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RethinkDB plugin for appframe.js NPM module",
-  "main": "appframe-express.js",
+  "main": "appframe-rethinkdb.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nodecraft/appframe-rethinkdb.js#readme",
   "dependencies": {
-    "appframe": "0.3.0",
+    "appframe": "0.3.3",
     "rethinkdbdash": "2.2.12",
     "lodash": "3.10.1"
   }

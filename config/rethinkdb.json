@@ -1,0 +1,9 @@
+{
+	"db": "test",
+	"servers": [
+		{
+			"host": "localhost",
+			"port": 29015,
+		}
+	]
+}
