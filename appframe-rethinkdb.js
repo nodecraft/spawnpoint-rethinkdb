@@ -15,7 +15,9 @@ module.exports = require('appframe')().registerPlugin({
 		'rethinkdb.compile_error': errors.ReqlCompileError,
 		'rethinkdb.client_error': errors.ReqlClientError
 	},
-	exports: function(app, callback){
+	callback: true,
+	exports: function(app, initCallback){
+		// fetch SSL files, because JSON + keys != fun
 		if(app.config.rethinkdb.servers){
 			app.config.rethinkdb.servers.map(function(server){
 				if(server.ssl_files && typeof(server.ssl_files) === 'object'){
@@ -31,8 +33,34 @@ module.exports = require('appframe')().registerPlugin({
 		}
 		app.r = rethinkdbdash(app.config.rethinkdb);
 		if(app.config.rethinkdb.pool !== false){
-			var master = app.r.getPoolMaster();
+			var initConnection = false,
+				master = app.r.getPoolMaster();
+
 			master.on('log', app.warn);
+			master.on('healthy', function(active){
+				if(!initConnection && !active){
+					if(app.config.rethinkdb.requireConnection){
+						return initCallback(app.errorCode('rethinkdb.failed_to_connect'));
+					}
+				}
+			});
+
+			master.on('available-size', function(size){
+				if(!initConnection && size > 0){
+					initConnection = true;
+					if(app.config.rethinkdb.requireConnection){
+						return initCallback();
+					}
+				}
+			})
+			// allowing reconnection is always an option
+			if(!app.config.rethinkdb.requireConnection){
+				return initCallback();
+			}
+		}else{
+			// no guarantee can be made?
+			return initCallback();
 		}
 	}
 });
+n

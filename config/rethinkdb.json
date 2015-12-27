@@ -1,4 +1,5 @@
 {
+	"requireConnection": true,
 	"db": "test",
 	"servers": [
 		{
