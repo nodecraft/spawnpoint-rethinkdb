@@ -63,4 +63,3 @@ module.exports = require('appframe')().registerPlugin({
 		}
 	}
 });
-n
