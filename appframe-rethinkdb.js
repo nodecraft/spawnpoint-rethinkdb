@@ -1,8 +1,8 @@
 'use strict';
+var fs = require('fs');
 var _ = require('lodash'),
-	fs = require('fs'),
-	rethinkdbdash = require('rethinkdbdash'),
-	errors = require('rethinkdbdash/lib/error');
+	rethinkdbdash = require('rethinkdbdash');
+var	errors = require('rethinkdbdash/lib/error');
 
 module.exports = require('appframe')().registerPlugin({
 	dir: __dirname,
@@ -36,7 +36,7 @@ module.exports = require('appframe')().registerPlugin({
 			var initConnection = false,
 				master = app.r.getPoolMaster();
 
-			master.on('log', app.warn);
+			master.on('log', console.log);
 			master.on('healthy', function(active){
 				if(!initConnection && !active){
 					if(app.config.rethinkdb.requireConnection){
@@ -52,7 +52,7 @@ module.exports = require('appframe')().registerPlugin({
 						return initCallback();
 					}
 				}
-			})
+			});
 			// allowing reconnection is always an option
 			if(!app.config.rethinkdb.requireConnection){
 				return initCallback();
