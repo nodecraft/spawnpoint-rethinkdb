@@ -16,7 +16,7 @@
     "rethinkdb",
     "appframe"
   ],
-  "author": "NodeCraft Hosting LLC",
+  "author": "Nodecraft Inc",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodecraft/appframe-rethinkdb.js/issues"
@@ -28,9 +28,9 @@
     "rethinkdbdash": "^2.3.31"
   },
   "devDependencies": {
-    "eslint": "4.12.0",
-    "eslint-config-nodecraft": "1.0.9",
+    "eslint": "4.19.1",
+    "eslint-config-nodecraft": "1.0.11",
     "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-node": "5.2.1"
+    "eslint-plugin-node": "6.0.1"
   }
 }
