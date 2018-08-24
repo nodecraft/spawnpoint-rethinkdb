@@ -1,6 +1,6 @@
 {
   "name": "appframe-rethinkdb",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "RethinkDB plugin for appframe.js NPM module",
   "main": "appframe-rethinkdb.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "rethinkdb",
     "appframe"
   ],
-  "author": "Nodecraft Inc",
+  "author": "Nodecraft Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodecraft/appframe-rethinkdb.js/issues"
@@ -28,9 +28,9 @@
     "rethinkdbdash": "^2.3.31"
   },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-nodecraft": "1.0.11",
-    "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-node": "6.0.1"
+    "eslint": "^5.4.0",
+    "eslint-config-nodecraft": "^1.0.14",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-node": "^7.0.1"
   }
 }
