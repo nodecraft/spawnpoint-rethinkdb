@@ -4,7 +4,7 @@ var _ = require('lodash'),
 	rethinkdbdash = require('rethinkdbdash');
 var	errors = require('rethinkdbdash/lib/error');
 
-module.exports = require('appframe')().registerPlugin({
+module.exports = require('spawnpoint').registerPlugin({
 	dir: __dirname,
 	name: "RethinkDB",
 	namespace: "rethinkdb",
