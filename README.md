@@ -1,5 +1,5 @@
-# appframe-rethinkdb
-[RethinkDB](http://rethinkdb.com/) Plugin for [Appframe](https://github.com/nodecraft/appframe.js) on NPM. This currently does not support SSL.
+# spawnpoint-rethinkdb
+[RethinkDB](http://rethinkdb.com/) Plugin for [Spawnpoint](https://github.com/nodecraft/spawnpoint.js) on NPM. This currently does not support SSL.
 
 ## API
 This api is mounted at `app.r` as a [Rethinkdbdash](https://github.com/neumino/rethinkdbdash) object. Please check the project documentation for more details for usage.
