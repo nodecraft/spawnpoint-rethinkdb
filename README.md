@@ -3,7 +3,7 @@
 
 [![npm version](https://badge.fury.io/js/spawnpoint-rethinkdb.svg)](https://badge.fury.io/js/spawnpoint-rethinkdb)
 [![dependencies Status](https://david-dm.org/nodecraft/spawnpoint-rethinkdb/status.svg)](https://david-dm.org/nodecraft/spawnpoint-rethinkdb)
-[![Build Status](https://travis-ci.org/nodecraft/spawnpoint-rethinkdb.svg?branch=master)](https://travis-ci.org/nodecraft/spawnpoint-rethinkdb)
+[![Build Status](https://travis-ci.org/nodecraft/spawnpoint-rethinkdb.svg?branch=master)](https://travis-ci.org/nodecraft/spawnpoint-rethinkdb) [![Greenkeeper badge](https://badges.greenkeeper.io/nodecraft/spawnpoint-rethinkdb.svg)](https://greenkeeper.io/)
 
 ## API
 This api is mounted at `app.r` as a [Rethinkdbdash](https://github.com/neumino/rethinkdbdash) object. Please check the project documentation for more details for usage.
