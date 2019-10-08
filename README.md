@@ -3,7 +3,7 @@
 
 [![npm version](https://badge.fury.io/js/spawnpoint-rethinkdb.svg)](https://badge.fury.io/js/spawnpoint-rethinkdb)
 [![dependencies Status](https://david-dm.org/nodecraft/spawnpoint-rethinkdb/status.svg)](https://david-dm.org/nodecraft/spawnpoint-rethinkdb)
-[![Actions Status](https://github.com/Syed-Umair/spawnpoint-rethinkdb/workflows/Node%20CI/badge.svg)](https://github.com/Syed-Umair/spawnpoint-rethinkdb/actions)
+[![Actions Status](https://github.com/nodecraft/spawnpoint-rethinkdb/workflows/Node%20CI/badge.svg)](https://github.com/nodecraft/spawnpoint-rethinkdb/actions)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nodecraft/spawnpoint-rethinkdb.svg)](https://greenkeeper.io/)
 
 ## API
