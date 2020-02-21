@@ -1,8 +1,8 @@
 'use strict';
-var fs = require('fs');
-var _ = require('lodash'),
+const fs = require('fs');
+const _ = require('lodash'),
 	rethinkdbdash = require('rethinkdbdash');
-var	errors = require('rethinkdbdash/lib/error');
+const	errors = require('rethinkdbdash/lib/error');
 
 module.exports = require('spawnpoint').registerPlugin({
 	dir: __dirname,
@@ -33,8 +33,8 @@ module.exports = require('spawnpoint').registerPlugin({
 		}
 		app.r = rethinkdbdash(app.config.rethinkdb);
 		if(app.config.rethinkdb.pool !== false){
-			var initConnection = false,
-				master = app.r.getPoolMaster();
+			let initConnection = false;
+			const master = app.r.getPoolMaster();
 
 			master.on('log', console.log);
 			master.on('healthy', function(active){
